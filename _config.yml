@@ -1,0 +1,13 @@
+# Site settings
+title: Muhasabah.Net | Kumpulan Rekaman Video & Audio Kajian Islami
+description: Kumpulan Kajian Habib Umar bin Muhammad bin Salim bin Hafidz, Habib Jindan bin Novel bin Jindan, Habib Ahmad bin Novel bin Jindan, Buya Yahya, Habib Novel bin Muhammad Alaydrus, Habib Segaf bin Hasan Baharun, Habib Taufiq bin Abdul Qodir Assegaf
+url: "http://muhasabah.net"
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+
+
+

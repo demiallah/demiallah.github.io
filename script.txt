@@ -1,0 +1,7 @@
+					
+git add .
+git commit -m "add baseurl config"
+git push origin gh-pages
+
+### NEW ###
+<a class="label bg-success">Baru</a> 

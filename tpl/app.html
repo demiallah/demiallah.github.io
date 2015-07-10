@@ -1,0 +1,37 @@
+  <!-- navbar -->
+  <div data-ng-include=" 'tpl/blocks/header.html' " class="app-header navbar">
+  </div>
+  <!-- / navbar -->
+
+  <!-- menu -->
+  <div data-ng-include=" 'tpl/blocks/aside.html' " class="app-aside hidden-xs {{app.settings.asideColor}}">
+  </div>
+  <!-- / menu -->
+
+  <!-- content -->
+  <div class="app-content">
+  <!-- modal -->
+  <div ui-butterbar></div>
+		<div ng-controller="ModalDemoCtrl" class="bg-light lter b-b wrapper-md">
+          <script type="text/ng-template" id="myModalContent.html">
+            <div ng-include="'tpl/modal.html'"></div>
+          </script>
+          <div>
+            <a ng-click="open('sm')"><h1 class="m-n font-thin h4"><font color="#fff" >Bismillah, Ingin berlangganan informasi kajian terbaru? Silahkan invite BBM 55496598 atau ikuti media sosial kami.</font></h1></a>
+          </div>
+		</div>
+<!-- /modal -->
+    
+    <a href class="off-screen-toggle hide" ui-toggle-class="off-screen" data-target=".app-aside" ></a>
+    <div class="app-content-body fade-in-up" ui-view></div>
+  </div>
+  <!-- /content -->
+
+  <!-- footer -->
+  <div class="app-footer wrapper b-t bg-light">
+    <span class="pull-right"><style='font-family:Source Sans Pro;font-size:14px;text-decoration:none;color:black'><script language='JavaScript' src='http://blogutils.net/olct/online.php?site=riyadluljannah.org&interval=600'></script>313 Online</style></span>
+    2015 &copy; oleh Muhasabah.Net
+  </div>
+  <!-- / footer -->
+
+  </div>
