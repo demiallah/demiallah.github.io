@@ -1,0 +1,99 @@
+              <script>    resolve: {
+                      deps: ['$ocLazyLoad',
+                        function( $ocLazyLoad ){
+                          return $ocLazyLoad.load([
+                            'com.2fdevs.videogular', 
+                            'com.2fdevs.videogular.plugins.controls', 
+                            'com.2fdevs.videogular.plugins.overlayplay',
+                            'com.2fdevs.videogular.plugins.poster',
+                            'com.2fdevs.videogular.plugins.buffering',
+                            'js/app/music/ctrl.js', 
+                            'js/app/music/theme.css'
+                          ]);
+                      }]
+                  }</script>
+<div class="hbox hbox-auto-xs" ng-init="
+  app.settings.asideFixed = true;
+  app.settings.asideDock = false;
+  app.settings.container = false;
+  app.hideAside = false;
+  app.hideFooter = false;
+  ">
+    <div class="wrapper-lg clearfix bg-success dker">
+      <div class="hbox" align="center">
+        <div align="center">
+          <div class="haraju">
+            <span class="text-2x text-white">خَبِّرِي</span>
+          </div><br>
+          <span>Berilah Kabar Padaku</span>
+        </div>
+      </div>
+    </div>
+<div class="videogular-container bg-light lter">
+  <videogular 
+    vg-player-ready="onPlayerReady" 
+    vg-theme="config.theme.url"  
+    class="videogular-container audio">
+    <vg-audio vg-src="config.sources"></vg-audio>
+    <vg-controls>
+      <vg-play-pause-button></vg-play-pause-button>
+      <vg-scrubBar>
+        <vg-title>{{config.title}}</vg-title>
+        <vg-scrubbarcurrenttime class="bg-info" style="height: 4px"></vg-scrubbarcurrenttime>
+      </vg-scrubBar>
+      <vg-timedisplay>{{ timeLeft | date:'mm:ss' }}</vg-timedisplay>
+
+    </vg-controls>
+  </videogular>
+</div>
+
+
+    <!-- display weather forecast -->
+    <div class="list-group no-border no-radius">
+      <div class="list-group-item ng-scope">
+        <div class="hbox" align="center">
+            <div class='post-body entry-content harab'>خَبِّرِي يَا نُسَيْمَى عَنْ مُغْرَامْ شَذِيْ وَالْهَانْ</div><br>
+		        <div><span class="h4">Berilah kabar kepadaku, wahai angin sepoi-sepoi aku tergila-gila, aku sangat rindu dan bingung.</span></div>
+        </div>
+      </div>
+      <div class="list-group-item ng-scope">
+        <div class="hbox" align="center">
+            <div class='post-body entry-content harab'>عَا شِقْ أَهْ عَا شِقْ أَهْ عَاشِقِ الْأَنْـوَارَْانْ</div><br>
+		        <div><span class="h4">Oh rindu, rindu kepada cahaya.</span></div>
+        </div>
+      </div>
+
+      <div class="list-group-item ng-scope">
+        <div class="hbox" align="center">
+            <div class='post-body entry-content harab'>أَنْتِ عَنِّي تَشْتَكِي وَالْحَالِي كُلَّ الْلَّيَلِ سَهْرَانْ</div><br>
+		        <div><span class="h4">Engkau perintahkan aku mengadu kepadanya, lihatlah keadaanku, sepanjang malam aku begadang.</span></div>
+        </div>
+      </div>
+
+      <div class="list-group-item ng-scope">
+        <div class="hbox" align="center">
+            <div class='post-body entry-content harab'>كَي أَرَا الْمُخْتَارْ</div><br>
+		        <div><span class="h4">Agar aku dapat memandang Nabi al-Mukhtar (Nabi pilihan).</span></div>
+        </div>
+      </div>
+      <div class="list-group-item ng-scope">
+        <div class="hbox" align="center">
+            <div class='post-body entry-content harab'>مَن يَّـلْمُنِي فِي غَرَامِي طَا لَمَا عَاشِقْ جَمَالَكْ</div><br>
+		        <div><span class="h4">Barang siapa menghina penyakitku, sungguh sangat terlambat karena kerinduanku pada kebaikan kekasihku sudah lama.</span></div>
+        </div>
+      </div>
+      <div class="list-group-item ng-scope">
+        <div class="hbox" align="center">
+            <div class='post-body entry-content harab'>يَامُكَرَّمْ يَا مُمَجَّدْ يَا مُؤَيَّدْ بِالشَّفَاعَةْ</div><br>
+		        <div><span class="h4">Wahai manusia yang dimuliakan, diagungkan, dikuatkan dengan syafa’at.</span></div>
+        </div>
+      </div>
+      <div class="list-group-item ng-scope">
+        <div class="hbox" align="center">
+            <div class='post-body entry-content harab'>هَاأَنَا أنَالَهَا</div><br>
+		        <div><span class="h4">Berilah itu kepadaku.</span></div>
+        </div>
+      </div>
+    </div>
+
+</div>

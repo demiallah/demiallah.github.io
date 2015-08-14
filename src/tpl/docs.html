@@ -1,0 +1,76 @@
+<!-- hbox layout -->
+<div class="hbox bg-light" ng-controller="ContactCtrl">
+  <!-- column -->
+  <div class="col w-lg lter b-r">
+      <div class="wrapper-xs b-b">
+        <div class="input-group m-b-xxs">
+          <span class="input-group-addon input-sm no-border no-bg"><i class="icon-magnifier text-md m-t-xxs"></i></span>
+          <input type="text" class="form-control input-sm no-border no-bg text-md" placeholder="Cari Judul Qosidah" ng-model="query">
+        </div>
+      </div>
+      <div class="row-row">
+        <div class="cell scrollable hover">
+          <div class="cell-inner">
+            <div class="m-t-n-xxs">
+              <div class="list-group list-group-lg no-radius no-border no-bg m-b-none">
+                <a ng-repeat="item in items | filter:query | orderBy:'first'" class="list-group-item m-l" href="{{item.link}}">				
+                  <span class="block text-ellipsis m-l-n text-md">
+                    {{item.first}}
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="text-center pos-abt w-full" style="top:50%;" ng-hide="(items | filter:{group:filter} | filter:query).length">Afwan, Qosidah yang Antum cari tidak ada :(</div>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+  <!-- /column -->
+</div>
+<!-- /hbox layout -->
+
+
+<!-- 
+<div class="hbox hbox-auto-xs hbox-auto-sm">
+  <div class="col bg-light inherit dk b-r">
+    <div id="nav-docs">
+      <ul class="nav">
+        <li class="padder b-qa l-h-2x bg text-qtitle">A</li>
+        <li><a href="#/layout/mobile">Ashubhubada</a></li>
+        <li><a ui-scroll-to="bower">Assalammualaik</a></li>
+
+        <li class="padder b-qa l-h-2x bg text-qtitle">B</li>
+        <li><a ui-scroll-to="bootstrap">Burikti Ya Ummal Hasanain</a></li>
+		
+		<li class="padder b-qa l-h-2x bg text-qtitle">C</li>
+		
+		<li class="padder b-qa l-h-2x bg text-qtitle">D</li>
+		<li><a ui-scroll-to="bootstrap">Da'uni</a></li>
+		
+		<li class="padder b-qa l-h-2x bg text-qtitle">E</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">F</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">G</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">H</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">I</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">J</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">K</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">L</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">M</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">O</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">P</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">Q</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">R</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">S</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">T</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">U</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">V</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">W</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">X</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">Y</li>
+		<li class="padder b-qa l-h-2x bg text-qtitle">Z</li>
+      </ul>
+    </div>
+  </div>
+</div>
+-->

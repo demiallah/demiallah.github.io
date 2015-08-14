@@ -1,0 +1,58 @@
+<html lang="en">
+<!--
+Scheherazade-webfont-example.html
+12 Feb 2014
+This file is part of Scheherazade font family (http://scripts.sil.org/Scheherazade)
+and is Copyright (c) 1994-2014 SIL International (http://www.sil.org/),
+with Reserved Font Names "Scheherazade" and "SIL". This Font Software is licensed
+under the SIL Open Font License, Version 1.1. You should have received a copy
+of the license along with this Font Software. If this is not the case, go to
+(http://scripts.sil.org/OFL) for all the details including a FAQ.
+-->
+<head>
+	<link rel="stylesheet" href="Scheherazade.css" type="text/css">
+	<meta charset="utf-8">
+	<meta name="description" content="An example of using Scheherazade on your web page via WOFF">
+	<meta name="author" content="NRSI, SIL International: scripts.sil.org">
+
+</head>
+<body>
+<div style="font-size: 150%;" dir=ltr>
+	
+<h1>Using Scheherazade webfonts</h1>
+<p>RenderingUnknown.</p>
+<p>The page demonstrates how to use the WOFF version of Scheherazade for web pages, using local copies of the .woff files in this archive. For more information on this technique
+	 - and how to use the normal TrueType version as a web font - see <a href="http://scripts.sil.org/using_web_fonts">Using SIL Fonts on Web Pages</a>.</p>
+
+<p>The body of this document is styled using an external stylesheet, with Scheherazade set as the default font, and loaded directly as a WOFF file using the @font-face rule. 
+	If you're seeing a serif font here then it is working. Otherwise the text will be in a sans-serif or your browser default. 
+	This technique should work in Firefox 3.6+, Chrome 6, the IE9 beta, and in development versions of Safari.</p>
+	
+<p>To see specifically how these techniques are specified in the CSS and HTML view the source to this page and the accompanying CSS file.</p>
+<div dir=rtl>
+<h2>Test General behavior of Arabic script in webfonts</h2>
+
+<p class=pr>&#x641; &#x641;&#x200D; &#x200D;&#x641;&#x200D; &#x200D;&#x641; &#x641;&#x641;&#x641; </p>	
+
+<p></p>
+<p class=rtl><span style="font-family:'Segoe UI','Sakkal Majalla'">ﷺ</span>‎إِنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِيْنًا * لِيَغْفِرَ لَكَ اللهُ مَا تَقَدَّ مَ مِنْ ذَنْبِكَ وَمَا تَأَخَّرَ وَ يُتِمَّ نِعْمَتَهُ عَلَيْكَ وَ يَهْدِ يَكَ صِرَاطًا مُسْتَقِيْمًا * وَ يَنْصُرَ كَ اللهُ نَصْرًا عَزِ يْزًا *
+لَقَدْ جَآءَ كُمْ رَسُولٌ مِّنْ أَ نْفُسِكُمْ عَزِ يْزٌ عَلَيْهِ مَا عَنِتُّمْ حَرِ يْصٌ عَلَيْكُمْ بِالْمُؤْ مِنِيْنَ رَءُوْفٌ رَّحِيْمٌ * فَإِنْ تَوَ لَّوْا فَقُلْ حَسْبِيَ اﷲُ لَآ إِهَ إِلاَّ هُوَ عَلَيْهِ تَوَ كَّلْتُ وَ هُوَ رَبُّ الْعَرْشِ الْعَظِيْمِ * إِنَّ اللهَ وَ مَلاَ ئِكَتَهُ يُصَلُّوْ نَ عَلَى النَّبِيِّ يَآ أَيُّهَا الَّذِ يْنَ آمَنُوْا صَلُّوْا عَلَيْهِ وَ سَلِّمُوْا تَسْلِيْمًا</p>
+
+<p class="cv121801">شِیلِلیکده، ابراهیمدان داوودا چِنلی بوُلان نِسیلِّر جِمی اوُن دؤرت آرقادئر. داووددان بابئل سوٚرگوٚنینه چِنلی هِم اوُن دؤرت، بابئل سوٚرگوٚنیندِن مِسیحه چِنلی هِم اوُن دؤرت آرقادئر. &#x6dd;&#x662;&#x663; رامادان بیر سِس اِشیدیلدی،</p>
+
+<h2>Test Character Variants of Arabic script in webfonts</h2>
+
+<p class=cv120> &#x62f; &#x200D;&#x62f;</cv120> [cv12=0]</p>
+
+<p class=cv121> &#x62f; &#x200D;&#x62f;</cv121> [cv12=1]</p>
+
+<h2>Test language-specific rendering of Arabic script in webfonts</h2>
+
+<p class=rtl > ۴۵۶۷  ه ههه م ممم  بِّ [default]</p>
+
+<p class=rtl lang=sd> ۴۵۶۷  ه ههه م ممم  بِّ [lang = sd]</p>
+
+<p class=rtl lang=ur> ۴۵۶۷  ه ههه م ممم  بِّ [lang = ur]</p>
+
+</body>
+</html>

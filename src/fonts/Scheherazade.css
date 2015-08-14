@@ -1,0 +1,17 @@
+@font-face {
+  font-family: ScheherazadeW;
+  src: url(Scheherazade-R.woff);
+}
+
+newarab,
+.newarab {
+  font-family: ScheherazadeW;
+  color: #000000;
+  font-size: 40px;
+  }
+
+.rtl {
+  font-family: ScheherazadeW, sans-serif; font-size: 200%; direction: rtl; text-align: right;
+    /* fall back to sans serif so that it's really obvious if the fonts don't load */
+}
+	
